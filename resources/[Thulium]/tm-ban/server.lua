@@ -63,6 +63,7 @@ AddEventHandler("playerConnecting", function(name, setReason, deferrals)
 
                                 reportted = true
                             end
+                            deferrals.done()
                         end
                     else 
                         deferrals.done()

@@ -6,7 +6,7 @@ Config = {}
 -- Default: kick
 Config.action = "kick"
 
-Config.webhook = "https://discordapp.com/api/webhooks/955070605894484018/clwEZDppIQoLmgz90Qc6Rmy3JB69Z9_copacN1S4Dlef3i7avP2Mmx8DNuoK3aIICxkA"
+Config.webhook = ""
 
 -- Send logs to webhook
 
