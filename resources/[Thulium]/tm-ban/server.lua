@@ -39,11 +39,11 @@ AddEventHandler("playerConnecting", function(name, setReason, deferrals)
                     local res = json.decode(response)
                     if (res.banned) then
                         if (string.lower(Config.action) == "kick") then
-                            deferrals.done("You have been kicked because you are a modder. You are in Thuilum.dev's modder database.")
+                            deferrals.done("You have been kicked because you are a modder. You are in CitizenBan's modder database.")
                             if (reportted == false) then
                                 send({
                                     title = "Kicked",
-                                    description = name.." have been kicked. Found in Thulium.dev's modder database.\n\n**ID found:** "..v.."\n**License:** "..license,
+                                    description = name.." have been kicked. Found in CitizenBan's modder database.\n\n**ID found:** "..v.."\n**License:** "..license,
                                     image = {
                                         url = res.image,
                                     },
@@ -55,7 +55,7 @@ AddEventHandler("playerConnecting", function(name, setReason, deferrals)
                             if (reportted == false) then
                                 send({
                                     title = "Warning",
-                                    description = name.." is a modder. Found in Thulium.dev's modder database.\n\n**ID found:** "..v.."\n**License:** "..license,
+                                    description = name.." is a modder. Found in CitizenBan's modder database.\n\n**ID found:** "..v.."\n**License:** "..license,
                                     image = {
                                         url = res.image,
                                     },
@@ -70,7 +70,7 @@ AddEventHandler("playerConnecting", function(name, setReason, deferrals)
                     end
                 elseif (status == 429) then
                     deferrals.done()
-                    print("Http request fail because your are rate limited.\nIf you want to rise your limit contact Thulium.dev.\nCould't check player ("..v..")")
+                    print("Http request fail because your are rate limited.\nIf you want to rise your limit contact CitizenBan.\nCould't check player ("..v..")")
                     rateLimit = true
                 else
                     if (error == false) then
