@@ -16,7 +16,7 @@ end
 
 AddEventHandler("playerConnecting", function(name, setReason, deferrals)
     deferrals.defer()
-    deferrals.update("Checking Thulium.dev's modder database...")
+    deferrals.update("Checking CitizenBan's modder database...")
     local src = source
     local xPlayer = GetPlayerIdentifiers(src)
     local license
